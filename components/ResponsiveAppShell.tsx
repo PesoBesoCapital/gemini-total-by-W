@@ -139,18 +139,18 @@ function MobileTopBar({
 }) {
   const label = getPageLabel(activePage);
   return (
-    <header className="sticky top-0 z-[90] flex items-center justify-between gap-3 border-b border-cyan-300/10 bg-[#06356f]/95 px-4 py-2.5 backdrop-blur-xl lg:hidden">
+    <header className="sticky top-0 z-[90] flex items-center justify-between gap-3 border-b border-gray-200 bg-white px-4 py-2.5 backdrop-blur-xl lg:hidden">
       <button
         onClick={onOpen}
-        className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl border border-cyan-300/15 bg-cyan-300/10 text-cyan-100 transition active:bg-cyan-300/20"
+        className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl border border-gray-300 bg-gray-100 text-gray-700 transition active:bg-gray-200"
         aria-label="Open menu"
       >
         <Menu className="h-4 w-4" />
       </button>
 
       <div className="min-w-0 flex-1 text-center">
-        <p className="truncate text-sm font-black leading-snug">{label}</p>
-        <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-cyan-300/80">
+        <p className="truncate text-sm font-black leading-snug text-gray-900">{label}</p>
+        <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-gray-500">
           TotalWireless Hub
         </p>
       </div>
@@ -247,13 +247,13 @@ function SidebarContent({
 }: any) {
   return (
     <div className="flex h-full flex-col">
-      <div className="flex items-center justify-between gap-3 border-b border-cyan-300/10 p-5">
+      <div className="flex items-center justify-between gap-3 border-b border-gray-200 bg-white p-5">
         <div className="flex min-w-0 items-center gap-3">
           <img src="/total-by-verizon-logo.jpg" alt="Total by Verizon" className="h-11 w-auto shrink-0" />
           {!collapsed && (
             <div className="min-w-0">
-              <p className="truncate text-xl font-black leading-5">TotalWireless</p>
-              <p className="font-black text-cyan-300">Hub</p>
+              <p className="truncate text-xl font-black leading-5 text-gray-900">TotalWireless</p>
+              <p className="font-black text-gray-600">Hub</p>
             </div>
           )}
         </div>
@@ -261,7 +261,7 @@ function SidebarContent({
         {mobile ? (
           <button
             onClick={onClose}
-            className="rounded-xl p-2 text-blue-100/80 hover:bg-white/10"
+            className="rounded-xl p-2 text-gray-600 hover:bg-gray-100"
             aria-label="Close menu"
           >
             <X className="h-5 w-5" />
@@ -269,7 +269,7 @@ function SidebarContent({
         ) : (
           <button
             onClick={onCollapse}
-            className="rounded-xl p-2 text-blue-100/80 hover:bg-white/10"
+            className="rounded-xl p-2 text-gray-600 hover:bg-gray-100"
             aria-label="Collapse sidebar"
           >
             {collapsed ? (
