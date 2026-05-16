@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-tw-navy text-white antialiased;
+  }
+}
+
+.bg-tw-gradient {
+  background: linear-gradient(135deg, var(--color-tw-blue) 0%, var(--color-tw-red) 100%);
+}
+
+.bg-store-dark {
+  background-color: #001a3d; /* A slightly darker navy for depth */
+}
+
+.text-tw-teal {
+  color: var(--color-tw-teal);
+}
+
+.border-tw-teal {
+  border-color: var(--color-tw-teal);
+}
+
+.quote-summary {
+  width: 100%;
+  overflow: hidden;
+  word-break: break-word;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.summary-row strong {
+  text-align: right;
+}
+
+@media (max-width: 480px) {
+  .summary-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .summary-row strong {
+    text-align: left;
+  }
+}
+
+body,
+html {
+  overflow-x: hidden;
+  max-width: 100%;
+}
