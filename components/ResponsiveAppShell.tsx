@@ -155,9 +155,7 @@ function MobileTopBar({
         </p>
       </div>
 
-      <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-[#ec1745] text-[11px] font-black">
-        TW
-      </div>
+      <img src="/total-by-verizon-logo.jpg" alt="Total by Verizon" className="h-9 w-auto" />
     </header>
   );
 }
@@ -251,9 +249,7 @@ function SidebarContent({
     <div className="flex h-full flex-col">
       <div className="flex items-center justify-between gap-3 border-b border-cyan-300/10 p-5">
         <div className="flex min-w-0 items-center gap-3">
-          <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[#ec1745] text-[13px] font-black">
-            TW
-          </div>
+          <img src="/total-by-verizon-logo.jpg" alt="Total by Verizon" className="h-11 w-auto shrink-0" />
           {!collapsed && (
             <div className="min-w-0">
               <p className="truncate text-xl font-black leading-5">TotalWireless</p>
