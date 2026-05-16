@@ -348,7 +348,7 @@ const TeamChat: React.FC<TeamChatProps> = ({ messages, reps, addMessage }) => {
             </div>
 
             <div className="flex-1 bg-tw-navy/40 border border-tw-teal/20 rounded-2xl shadow-xl flex flex-col overflow-hidden">
-                <div className="flex-1 p-6 space-y-6 overflow-y-auto bg-gradient-to-b from-tw-navy/40 to-tw-navy/60">
+                <div className="flex-1 p-6 space-y-6 overflow-y-auto bg-tw-navy/50">
                     {messages.length === 0 && (
                          <div className="flex flex-col items-center justify-center h-full text-gray-600 opacity-50">
                             <ChatIcon className="w-12 h-12 mb-2"/>

@@ -8,9 +8,6 @@
   }
 }
 
-.bg-tw-gradient {
-  background: linear-gradient(135deg, var(--color-tw-blue) 0%, var(--color-tw-red) 100%);
-}
 
 .bg-store-dark {
   background-color: #001a3d; /* A slightly darker navy for depth */

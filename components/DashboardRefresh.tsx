@@ -527,7 +527,7 @@ const DashboardRefresh = React.memo(({ onNavigateToClientManager }: DashboardRef
   return (
     <div className="bg-[#062f66] text-white">
       <div className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(17,209,196,0.24),transparent_35%),radial-gradient(circle_at_top_right,rgba(244,36,79,0.18),transparent_30%),linear-gradient(135deg,#06356f_0%,#062f66_45%,#082b5c_100%)]" />
+        <div className="absolute inset-0 bg-tw-navy" />
         <div className="relative mx-auto max-w-7xl px-2 py-4 sm:px-6 sm:py-8 lg:px-10 lg:py-10">
           {toast && (
             <div className="fixed right-6 top-6 z-50 rounded-2xl border border-cyan-300/30 bg-[#082b5c]/95 px-5 py-3 text-sm font-semibold text-cyan-100 shadow-2xl backdrop-blur-xl">
@@ -908,7 +908,7 @@ const PlanCard = React.memo(function PlanCard({ plan, selected, onSelect }: any)
         selected ? "border-cyan-300 bg-cyan-300/15 ring-2 ring-cyan-300/50" : "border-cyan-300/10 bg-white/[0.06] hover:border-cyan-300/35 hover:bg-white/[0.08]"
       )}
     >
-      <div className={classNames("mb-5 inline-flex rounded-2xl bg-gradient-to-r px-3 py-1 text-xs font-black text-[#042b5c]", plan.color)}>
+      <div className={classNames("mb-5 inline-flex rounded-2xl px-3 py-1 text-xs font-black text-[#042b5c]", plan.color)}>
         {plan.badge}
       </div>
       <div className="flex items-start justify-between gap-4">
@@ -1048,7 +1048,7 @@ const ProgressCard = React.memo(function ProgressCard({ stat, onAdjust }: any) {
         <p className="text-sm text-blue-100/60">Goal: {stat.currency ? money(stat.goal) : stat.goal}</p>
       </div>
       <div className="mt-5 h-2 overflow-hidden rounded-full bg-black/20">
-        <div className="h-full rounded-full bg-gradient-to-r from-cyan-300 to-emerald-300 transition-all" style={{ width: `${progress}%` }} />
+        <div className="h-full rounded-full bg-tw-teal transition-all" style={{ width: `${progress}%` }} />
       </div>
       <p className="mt-2 text-right text-xs font-bold text-blue-100/60">{progress}%</p>
     </div>

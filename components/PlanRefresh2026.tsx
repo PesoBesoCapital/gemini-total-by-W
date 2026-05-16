@@ -299,7 +299,7 @@ export default function PlanRefresh2026() {
   };
 
   return (
-    <div className="bg-gradient-to-br from-tw-navy/80 via-tw-teal/10 to-tw-navy text-slate-100 rounded-xl overflow-hidden shadow-2xl pb-10">
+    <div className="bg-tw-navy/80 text-slate-100 rounded-xl overflow-hidden shadow-2xl pb-10">
       <header className="sticky top-0 z-40 border-b border-white/10 bg-tw-navy/80 backdrop-blur-xl">
         <div className="flex flex-col gap-4 px-6 py-6 md:flex-row md:items-center md:justify-between">
           <div>

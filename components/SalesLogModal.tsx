@@ -76,7 +76,7 @@ const Habits: React.FC<HabitsProps> = ({ habits, completedHabits, toggleHabit })
                 </div>
                 
                 <div className="space-y-6">
-                    <div className="bg-gradient-to-br from-red-500 to-orange-500 text-white p-6 rounded-xl shadow-lg text-center">
+                    <div className="bg-tw-red text-white p-6 rounded-xl shadow-lg text-center">
                         <FireIcon className="w-16 h-16 mx-auto" />
                         <p className="text-6xl font-bold mt-2">{streak}</p>
                         <p className="font-semibold text-xl">Day Streak</p>
